@@ -1,24 +1,21 @@
-# vue-store
+# BookList with vuex
 
-## Project setup
-```
-yarn install
-```
+### Memo
 
-### Compiles and hot-reloads for development
 ```
-yarn serve
-```
+import Vuex from "vuex";
 
-### Compiles and minifies for production
-```
-yarn build
-```
+Vue.use(Vuex);
 
-### Lints and fixes files
-```
-yarn lint
+export default new Vuex.Store({
+  state: {},
+  mutations: {},
+  actions: {},
+  getters: {},
+  modules: {}
+});
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Mutations: To call a mutation you can either do **this.\$store.commir(MUTATION, params)** or import and write **...mapGetters** to computed property
+
+Actions: To call an action you can either do **this.\$store.dispatch(ACTION, params)** or import and write **...mapAction** to methods property
